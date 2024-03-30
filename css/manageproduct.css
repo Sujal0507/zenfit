@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: rgb(252, 5, 5);
+  color: #fff;
+}
+
+img {
+  max-width: 100px;
+  height: auto;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions a {
+  text-decoration: none;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.actions a:hover {
+  text-decoration: underline;
+}
+
+.delete-link {
+  color: #f00;
+}
+
+.delete-link:hover {
+  text-decoration: none;
+  color: #f00;
+}
+
+a.add-product-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a.add-product-link:hover {
+  background-color: #0056b3;
+}

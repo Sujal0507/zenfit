@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/assets/signup1.png');
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(34, 34, 34, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.wrapper h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-box input, .input-box select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: #444;
+  color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.input-box input:focus, .input-box select:focus {
+  border-color: #aa4203;
+}
+
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #aa4203;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button input:hover {
+  background-color: #993303;
+}
+
+.text {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.text h3 {
+  font-size: 14px;
+  color: #fff;
+}
+
+.text h3 a {
+  color: #aa4203;
+  text-decoration: none;
+}
+
+.text h3 a:hover {
+  text-decoration: underline;
+}

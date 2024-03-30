@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/css/animate.css">
+  <link rel="stylesheet" href="/css/hero.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Start Home -->
+<section class="home wow flash" id="home">
+
+    <div class="container" style="
+    padding-left: 0px;
+">
+      <h1 class="wow slideInLeft" data-wow-delay="1s">It's <span>Zenfit</span> Era.Hey Sujal,</h1>
+      <h1 class="wow slideInRight" data-wow-delay="1s">We're Ready <span>fit you</span></h1>
+  </div>
+  <!-- go down -->
+  <a href="#about" class="go-down">
+      <i class="fa fa-angle-down" aria-hidden="true"></i>
+  </a>
+  <!-- go down -->
+
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+
+      $(".ham-burger, .nav ul li a").click(function () {
+
+          $(".nav").toggleClass("open")
+
+          $(".ham-burger").toggleClass("active");
+      })
+      $(".accordian-container").click(function () {
+          $(".accordian-container").children(".body").slideUp();
+          $(".accordian-container").removeClass("active")
+          $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+          $(this).children(".body").slideDown();
+          $(this).addClass("active")
+          $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+      })
+
+      $(".nav ul li a, .go-down").click(function (event) {
+          if (this.hash !== "") {
+
+              event.preventDefault();
+
+              var hash = this.hash;
+
+              $('html,body').animate({
+                  scrollTop: $(hash).offset().top
+              }, 800, function () {
+                  window.location.hash = hash;
+              });
+
+              // add active class in navigation
+              $(".nav ul li a").removeClass("active")
+              $(this).addClass("active")
+          }
+      })
+  })
+
+</script>
+<script src="min.js"></script>
+<script>
+  wow = new WOW(
+      {
+          animateClass: 'animated',
+          offset: 0,
+      }
+  );
+  wow.init();
+</script>
+<!-- End Home -->
+</body>
+</html>

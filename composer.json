@@ -1,0 +1,8 @@
+{
+    "repositories": [],
+    "require": {
+        "mongodb/mongodb": "^1.12",
+        "phpmailer/phpmailer": "^6.9",
+        "twilio/sdk": "^7.16"
+    }
+}

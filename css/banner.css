@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+.h5, h5 {
+  font-size: 3rem;
+  color: white;
+}
+
+.fa fa-circle{
+color: #9A0162;
+font-size: 1rem;
+}
+
+element.style {
+  width: 28rem;
+}
+.card{
+  margin-top: 20px;
+  /* width: 20%; */
+/* border-radius: 5px; */
+ margin: 100px; 
+display: inline-block;
+/* padding-right: 100px; */
+/* padding-left: 20px; */
+}
+.btn-primary {
+  color: black;
+  background-color: lightblue;
+   /* border-color: #9A0162;  */
+   padding: 15px 25px;
+   border: 3px black;
+
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  border: 2px #9A0162;
+}
+.btn-primary:hover{
+background-color: black;
+}
+
+.h1, h1{
+font-family: 'Cinzel Decorative', cursive;
+color: white;
+margin-top: 60px;
+margin-bottom: 10px;
+margin-left: 25px;
+font-weight: bold;
+font-size: 3rem;
+
+}
+
+.h1, h1:hover{
+/* color: #9A0162; */
+/* cursor: pointer; */
+/* transform: scale(1.05) ; */
+}
+.card:hover{
+transform: scale(1.05);
+}
+.card-body {
+width: 380px;
+
+background-color: black;
+}
+.card-img-top {
+  width: 380px;
+}
+.card{
+width: 500px;
+border: none;
+background-color: #F2E9E9;
+
+}
+p{
+font-size: 1.55rem;
+padding: 5px;
+margin-bottom: 1.5rem;
+color: lightcoral;
+}
+.btn{
+font-size: 2rem;
+border-radius: 25px;
+border: none;
+
+}
+.cardh:hover{
+transform: scale(1.15);
+cursor: pointer;
+color: black;
+}
+.btn btn-primary{
+border: 3px;
+}
+body{
+ background-image: url('/assets/slider4.webp'); 
+}
+marquee{
+font-family: 'Cinzel Decorative', cursive;
+color: black;
+margin-top: 60px;
+margin-bottom: 10px;
+margin-left: 25px;
+font-weight: bold;
+font-size: 3rem;
+}

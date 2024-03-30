@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenfit | Admin</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32">
+<link rel="icon" href="assets/favicon-192.png" type="image/png" sizes="192x192">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Outfit", sans-serif;
+    }
+    
+    html {
+       font-size: 92%; 
+      /* 1rem = 10px */
+      /* overflow-x: hidden; */
+    }
+    
+    body {
+      overflow-x: hidden;
+    }
+    
+    .header {
+      padding: 0 1rem;
+      height: 10rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: gray;
+      font-size: 62.5%;
+    }
+    
+    .header .logo {
+      height: 10rem;
+    }
+    
+    .navbar-list {
+      display: flex;
+      gap: 3.5rem;
+      list-style: none;
+      font-size: 10px;
+    }
+    
+    .navbar-link:link,
+    .navbar-link:visited {
+      display: inline-block;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #212529;
+      transition: all 0.3s;
+    }
+    
+    .navbar-link:hover,
+    .navbar-link:active {
+      color: rgb(204, 64, 64);
+    }
+    
+
+    .navbar{
+      font-size: 25px;
+    }
+
+    h1{
+      font-size: 3.5rem;
+    }
+    
+    
+    
+   
+    </style>
+  </head>
+  <body>
+    <header class="header" style="margin-bottom: 0;">
+      
+      <h1>Zenfit ADMIN</h1>
+    
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a class="navbar-link" href="/auser.php">Manage User</a></li>
+          <li><a class="navbar-link" href="/managemembership.php">Memberships</a></li>
+          <li><a class="navbar-link" href="/bill_gen.php">Bills</a></li>
+          <li><a class="navbar-link" href="/manageappoint.php">Appointments</a></li>
+          <li><a class="navbar-link" href="/manageblog.php">Manage Blogs </a></li>
+          <li><a class="navbar-link" href="/manageproduct.php">Products</a></li>
+          <li>
+            <a class="navbar-link" href="/alogout.php" onclick="return confirmLogout();">
+                <i class="fas fa-sign-out-alt"></i> 
+            </a>
+        </li>
+          
+        </ul>
+      </nav>
+
+    
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      function confirmLogout() {
+          if (confirm("Are you sure you want to logout?")) {
+              // If user confirms, proceed with logout
+              return true;
+          } else {
+              // If user cancels, do not proceed with logout
+              return false;
+          }
+      }
+      </script>
+  </body>
+</html>

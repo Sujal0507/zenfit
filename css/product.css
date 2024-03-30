@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  width: calc(33.33% - 20px); /* Three products per row with spacing */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%; /* Make the image fill its container */
+  height: auto;
+  width: 80%; /* Set the image width to 80% of the product container */
+  margin: 0 ; /* Center the image horizontally */
+}
+
+.product .product-info {
+  text-align: left; /* Align the description text to the left */
+}
+
+.product h2 {
+  margin: 10px 0;
+}
+
+.product button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: lightcoral;
+}
+
+/* New CSS for the 3x3 grid */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: calc(33.33% - 20px);
+}
+

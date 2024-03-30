@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.image img{
+    position: absolute;
+    height: 100%;
+}
+.container {
+    max-width: 600px;
+    padding: 30px;
+    position: relative;
+    margin-left: 400px;
+    padding-top: 50px;
+    background-color: rgba(34, 34, 34, 0.8);
+    border-radius: 20px;
+}
+.container i{
+    color: #fff;
+    margin-left: 570px;
+}
+
+.form-group {
+    padding-top: 20px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+.group{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 18px;
+}
+.container h2{
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+.form-group-phone{
+    margin-bottom: 15px;
+    width: 180px;
+}
+.form-group-member{
+    margin-bottom: 15px;
+    width: 150px;
+}
+.form-group-gender{
+    margin-bottom: 15px;
+    width: 150px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 90%;
+    padding: 8px;
+
+}
+
+button {
+    margin-left: 190px;
+    margin-top: 20px;
+    padding: 10px 60px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+ #
+}
